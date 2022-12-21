@@ -54,7 +54,7 @@ class Navigator:
                 time.sleep(0.5)
                 self.wait.until(expected_conditions.presence_of_all_elements_located(
                     (By.XPATH, "//button[text()='Book Now']")
-                ))[0].click()
+                ))[-1].click()
                 success = True
             except TimeoutException:
                 continue
