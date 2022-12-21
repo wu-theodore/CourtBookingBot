@@ -11,8 +11,8 @@ def main():
     )
     parser.add_argument("-d", "--date", type=str, required=True, help="Datetime string of format DD/MM/YYYY")
     parser.add_argument("-t", "--time", type=int, required=True, help="24hr format hour integer, HH")
-    parser.add_argument("-n", "--num", type=int, required=True, choices=[1, 2, 3], help="24hr format hour integer, HH")
-    parser.add_argument("-u", "--username", type=str, required=True, help="UTORID username.")
+    parser.add_argument("-n", "--num", type=int, required=True, choices=[1, 2, 3], help="Court number, must be 1, 2, or 3")
+    parser.add_argument("-u", "--username", type=str, required=True, help="UTORID username")
     parser.add_argument("-p", "--password", type=str, required=True, help="Password associated with UTORID")
     args = parser.parse_args()
 
