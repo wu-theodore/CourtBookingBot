@@ -28,7 +28,7 @@ class Navigator:
         )).send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.CSS_SELECTOR, "button.btn.btn-primary.btn-lg").click()
-        time.sleep(10)
+        time.sleep(20)
 
     def book_court(self, booking_time, court_num):
         # Hard-coded links to each badminton court's booking site, but user needs to be authenticated first!

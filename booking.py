@@ -1,4 +1,5 @@
 import datetime
+import pause
 
 import selenium.common.exceptions
 from selenium import webdriver
@@ -9,6 +10,8 @@ def booking(date, hour, court_num, username, password):
     home_url = "https://recreation.utoronto.ca/booking"
     booking_time = compute_booking_time(date, hour)
     print(f"\nThe court booking bot will try to book the earliest possible court two days from {booking_time}. \n")
+
+    pause.until(booking_time - datetime.timedelta(minutes=5))
 
     driver = webdriver.Chrome()
 
