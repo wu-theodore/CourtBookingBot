@@ -30,6 +30,12 @@ class Navigator:
         self.driver.find_element(By.CSS_SELECTOR, "button.btn.btn-primary.btn-lg").click()
         time.sleep(20)
 
+    def refresh_page(self):
+        try:
+            self.driver.refresh()
+        except Exception:
+            print("Driver quit unexpectedly!")
+
     def book_court(self, booking_time, court_num):
         # Hard-coded links to each badminton court's booking site, but user needs to be authenticated first!
         if court_num == 1:
