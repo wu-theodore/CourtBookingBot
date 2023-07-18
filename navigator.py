@@ -65,5 +65,6 @@ class Navigator:
             except TimeoutException:
                 continue
             if success:
+                time.sleep(1)
                 return
         raise TimeoutException

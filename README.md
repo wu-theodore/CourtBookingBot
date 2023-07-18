@@ -1,7 +1,7 @@
 # CourtBookingBot
 Simple bot to fight for a badminton court at UofT. Works by opening a scripted browser and simulates user actions.
 
-The bot should be run at least tw days in advance of the desired date (since courts are tight).
+The bot should be run at least two days in advance of the desired date (since courts are tight).
 
 ## Setup
 The bot was developed with Python 3. Be sure to import the necessary packages with `pip install -r requirements.txt`
